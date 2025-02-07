@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color:rgba(122,233,234,0.3);
+}
+.header .logo{
+    display: flex;
+    padding: 4px;
+}
+.sentence {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sentence #sample-text{
+    width: 60%;
+    height: 90px;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: flex;
+    color: #000000;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 4vw;
+    font-weight: bold;
+    margin-left: 10px;
+    padding-left: 8px;
+}
+.sentence #user-text{
+    display: flex;
+    width: 60%;
+    height: 90px;
+    border: none;
+    font-size: 4vw;
+    font-weight: bold;
+}
+.sentence .line {
+    position: relative;
+    width: 64%;
+    height: 1px;
+    background-color: #333;
+}
+input:focus{
+    outline: none;
+}
+.correct{
+    color: green;
+}
+.incorrect{
+    color: red;
+}
+.panding{
+    color: aquamarine;
+}
+.space{
+    color: transparent;
+}
